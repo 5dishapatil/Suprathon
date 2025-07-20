@@ -9,9 +9,9 @@ soundfile==0.12.1
 Flask-Migrate==4.0.7
 reportlab==4.2.0
 ffmpeg-python==0.2.0
-#mediapipe==0.10.3
+# mediapipe==0.10.3  ← Commented out, installed manually in code
 noisereduce==3.0.0
-librosa==0.10.2
-scipy==1.10.1
+librosa==0.10.1     # changed from 0.10.2 → avoids newer scipy
+scipy==1.10.1       # Prebuilt wheel — no compiler needed
 openai-whisper==20231117
 gunicorn

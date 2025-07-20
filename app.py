@@ -11,6 +11,14 @@ from reportlab.lib.styles import getSampleStyleSheet
 import logging
 import threading
 import time
+import subprocess
+
+try:
+    import mediapipe as mp
+except ImportError:
+    subprocess.call(["pip", "install", "mediapipe==0.10.3"])
+    import mediapipe as mp
+
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
